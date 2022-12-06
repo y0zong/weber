@@ -1,0 +1,13 @@
+{
+	"route_dir": "route",
+	"build_dir_dev": "node_modules/.devtmp",
+	"build_dir_prd": "release",
+	"route_rules": [
+		{
+			"username":"^[a-zA-Z][.0-9a-zA-Z]{3,32}$",
+			"docid":"^[a-zA-Z0-9][-a-zA-Z0-9]{3,64}$"
+		}
+	],
+	"enable_route_filter": true,
+	"enable_ssr": true
+}

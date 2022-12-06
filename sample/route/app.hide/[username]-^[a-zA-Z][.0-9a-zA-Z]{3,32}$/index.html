@@ -1,0 +1,48 @@
+<div>
+	hello {name}, this looks great, {$n1} + {$n2} = {$n1+$n2}
+	<a href="https://cn.bing.com"><span>go bing</span></a>
+	<button class="demo" click={say_hi}>say hi</button>
+	<input type="text" name="usernmae" value={$n1}>
+	<input type="text" name="usernmae" value={$n2}>
+
+	<slot></slot>
+
+	<ul class:on={}>
+		<li loop={data, item, index}>{index, item.name}</li>
+	</ul>
+	<div if={show == true}>
+		show me
+	</div>
+	<self></self>
+</div>
+
+<style>
+	.demo {
+		background-color: brown;
+	}
+</style>
+
+<script>
+	export const head = {
+		title: 'this is demo'
+	}
+
+	let show = 1
+	let data = [{ name: 'name1' }, { name: 'name2' }]
+
+	ready: {
+		let some = 'some'
+	}
+
+	willdrop: {
+		alert('will drop')
+	}
+
+	server: {
+		const get = async (req, res) => {
+			return {
+				code: 200
+			}
+		}
+	}
+</script>
